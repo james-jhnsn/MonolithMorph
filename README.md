@@ -27,7 +27,7 @@ By adopting a microservices architecture, I transformed the monolithic applicati
 
 ## Prerequisites
 
-- An AWS account (If not available, I followed the ["Setting Up Your AWS Environment"](https://aws.amazon.com/getting-started/guides/setup-environment/) tutorial for a quick overview).
+- An AWS account.
 - AWS CLI installed and configured.
 - AWS Copilot installed and configured.
 - Docker installed.
