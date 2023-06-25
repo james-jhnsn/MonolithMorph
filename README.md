@@ -60,3 +60,25 @@ This project followed a modular structure, which consisted of the following modu
 4. Deploy microservices:
    - Deployed the Node.js application as a set of interconnected services behind an Application Load Balancer (ALB).
    - Implemented traffic shifting using the ALB to seamlessly transition from the monolith to the microservices.
+
+## Technologies Used
+
+This project utilizes the following technologies:
+
+- **Amazon EC2**: Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity in the cloud and is used to instantiate a managed cluster of EC2 compute instances.
+
+- **Amazon ECR**: Amazon Elastic Container Registry (ECR) is a fully managed container registry service. It is used in this project to store and manage container images for the microservices.
+
+- **Amazon ECS**: Amazon Elastic Container Service (ECS) is a highly scalable, fast, container management service. It is used to deploy and run the microservices as containers.
+
+- **AWS Copilot**: AWS Copilot is a command-line tool that enables developers to build, release, and operate production-ready applications on AWS. It simplifies the process of building containerized applications by providing a consistent and opinionated workflow.
+
+- **AWS Fargate**: AWS Fargate is a serverless compute engine for containers. It enables you to run containers without having to manage the underlying infrastructure. In this project, it is used as the compute engine for running the microservices.
+
+- **Docker**: Docker is an open platform for developing, shipping, and running applications. It is used to containerize the monolithic Node.js application and each of the microservices.
+
+- **Node.js**: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is used to develop the monolithic application and the microservices.
+
+- **VS Code**: Visual Studio Code is a lightweight, cross-platform source code editor. It is used as the preferred IDE for development in this project.
+
+These technologies work together to enable the successful containerization, deployment, and management of the monolithic application as microservices, providing scalability, flexibility, and independent updating capabilities.
