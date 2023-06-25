@@ -33,7 +33,7 @@ Throughout this project, I achieved the following:
 
 To complete this project, I had the following prerequisites in place:
 
-- An AWS account (If not available, I followed the "Setting Up Your AWS Environment" tutorial for a quick overview).
+- An AWS account (If not available, I followed the ["Setting Up Your AWS Environment"](https://aws.amazon.com/getting-started/guides/setup-environment/) tutorial for a quick overview).
 - AWS CLI installed and configured.
 - AWS Copilot installed and configured.
 - Docker installed.
