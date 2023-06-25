@@ -6,15 +6,11 @@ MonolithMorph
 
 In this project, I successfully deployed a monolithic Node.js application to a Docker container and then decoupled it into microservices without any downtime. The application I built is a message board that allows users to interact through threads and messages.
 
-## Why this matters
-
 Traditional monolithic architectures pose challenges when it comes to scalability, updates, and maintenance. As the code base grows, it becomes increasingly complex to introduce new features, languages, frameworks, and technologies, limiting innovation and flexibility.
 
 By adopting a microservices architecture, I transformed the monolithic application into separate services, each running in its own container. This approach allows for independent scaling and updates of different application features. Microservices are designed around specific business capabilities, and each service performs a single function. Additionally, microservices can be written in different programming languages and frameworks.
 
-## What I accomplished
-
-Throughout this project, I achieved the following:
+## Features
 
 1. Containerized and deployed the monolithic application:
    - Leveraged Docker to create a container for the Node.js application.
