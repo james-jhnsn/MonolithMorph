@@ -31,8 +31,6 @@ Throughout this project, I achieved the following:
 
 ## Prerequisites
 
-To complete this project, I had the following prerequisites in place:
-
 - An AWS account (If not available, I followed the ["Setting Up Your AWS Environment"](https://aws.amazon.com/getting-started/guides/setup-environment/) tutorial for a quick overview).
 - AWS CLI installed and configured.
 - AWS Copilot installed and configured.
@@ -62,8 +60,6 @@ This project followed a modular structure, which consisted of the following modu
    - Implemented traffic shifting using the ALB to seamlessly transition from the monolith to the microservices.
 
 ## Technologies Used
-
-This project utilizes the following technologies:
 
 - **Amazon EC2**: Amazon Elastic Compute Cloud (EC2) provides resizable compute capacity in the cloud and is used to instantiate a managed cluster of EC2 compute instances.
 
