@@ -43,20 +43,20 @@ To complete this project, I had the following prerequisites in place:
 
 This project followed a modular structure, which consisted of the following modules:
 
-1. Setup (20 minutes):
+1. Setup:
    - Installed and configured the AWS CLI.
    - Installed AWS Copilot.
    - Installed Docker.
 
-2. Containerize and deploy the monolith (30 minutes):
+2. Containerize and deploy the monolith:
    - Containerized the application using Docker.
    - Used AWS Copilot to instantiate a managed cluster of EC2 compute instances.
    - Deployed the monolithic Node.js application as a container running on the cluster.
 
-3. Break the monolith (20 minutes):
+3. Break the monolith:
    - Divided the Node.js application into several interconnected services.
    - Pushed each service's image to an Amazon Elastic Container Registry (Amazon ECR) repository.
 
-4. Deploy microservices (30 minutes):
+4. Deploy microservices:
    - Deployed the Node.js application as a set of interconnected services behind an Application Load Balancer (ALB).
    - Implemented traffic shifting using the ALB to seamlessly transition from the monolith to the microservices.
