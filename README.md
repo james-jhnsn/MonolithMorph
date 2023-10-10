@@ -73,24 +73,24 @@ AWS Copilot sets the path based on the service name. Edit the `manifest.yml` for
 
  1. ### Deploy the Microservices
     
-    copilot svc deploy --name posts
-    copilot svc deploy --name threads
-    copilot svc deploy --name users
+        copilot svc deploy --name posts
+        copilot svc deploy --name threads
+        copilot svc deploy --name users
     
 
  2. ### Shut down the Monolith
     
-    copilot svc delete --name monolith
+        copilot svc delete --name monolith
     
 
  3. ### Verify the Deployment
-Use the provided URLs to validate the microservices deployment.
+ Use the provided URLs to validate the microservices deployment.
 
 ## Cleanup and Conclusion
 
  1. ### Delete the Application
     
-    copilot app delete --name api
+        copilot app delete --name api
     
 
 Congratulations! You've now broken a monolithic application into microservices, offering more flexibility and scalability.
