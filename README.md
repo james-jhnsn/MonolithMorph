@@ -116,42 +116,40 @@ copilot svc deploy --name <microservice-name>
 
 copilot svc deploy --name posts
 
-Deploy threads microservice:
+### **Deploy threads microservice:
 
 
       copilot svc deploy --name threads
 
-Deploy users microservice:
+### **Deploy users microservice:
 
     copilot svc deploy --name users
 
-**Step 2: Shut down the Monolith
+### **Step 2: Shut down the Monolith
 
 Shut down the monolithic service using:
 
+      copilot svc delete --name monolith
 
-copilot svc delete --name monolith
-
-**Step 3: Verify the Deployment
+### **Step 3: Verify the Deployment
 
 You can validate the microservices deployment using the provided URLs:
 
     Check User Data:
 
 
-[User Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/users/3)
+http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/users/3
 
 Check Thread Data:
 
 
-[Thread Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/threads/2)
+      http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/threads/2
 
 View Posts Data:
 
 
-[Posts Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/)
+      http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/
 
 View Posts in Thread 1:
 
-
-[Posts in Thread 1](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/in-thread/1)
+      http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/in-thread/1
