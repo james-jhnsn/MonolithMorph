@@ -114,43 +114,60 @@ Repeat similar configurations for threads and users services by setting their re
 
 For each microservice, run the following command:
 
-```
+bash
+
 copilot svc deploy --name <microservice-name>
 
-Deploy posts microservice:
+    Deploy posts microservice:
 
-
+    bash
 
 copilot svc deploy --name posts
 
 Deploy threads microservice:
 
-
+bash
 
 copilot svc deploy --name threads
 
 Deploy users microservice:
 
+bash
 
-
-copilot svc deploy --name users
+    copilot svc deploy --name users
 
 Step 2: Shut down the Monolith
 
-To shut down the monolithic service, execute:
+Shut down the monolithic service using:
 
-
+bash
 
 copilot svc delete --name monolith
 
 Step 3: Verify the Deployment
 
-Test the microservices by visiting the following URLs:
+You can validate the microservices deployment using the provided URLs:
 
-    User Data
+    Check User Data:
 
-    Thread Data
+    less
 
-    Posts Data
+[User Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/users/3)
 
-    Posts in Thread 1
+Check Thread Data:
+
+less
+
+[Thread Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/threads/2)
+
+View Posts Data:
+
+less
+
+[Posts Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/)
+
+View Posts in Thread 1:
+
+less
+
+[Posts in Thread 1](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/p
