@@ -100,7 +100,7 @@ In this project, I successfully deployed a monolithic Node.js application to a D
     
 
  3. ### Verify the Deployment
- Use the provided URLs to validate the microservices deployment.
+ - Use the provided URLs to validate the microservices deployment.
 
 ## Cleanup and Conclusion
 
