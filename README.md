@@ -114,13 +114,11 @@ Repeat similar configurations for threads and users services by setting their re
 
 For each microservice, run the following command:
 
-bash
 
 copilot svc deploy --name <microservice-name>
 
     Deploy posts microservice:
 
-    bash
 
 copilot svc deploy --name posts
 
@@ -150,24 +148,20 @@ You can validate the microservices deployment using the provided URLs:
 
     Check User Data:
 
-    less
 
 [User Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/users/3)
 
 Check Thread Data:
 
-less
 
 [Thread Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/threads/2)
 
 View Posts Data:
 
-less
 
 [Posts Data](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/)
 
 View Posts in Thread 1:
 
-less
 
-[Posts in Thread 1](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/p
+[Posts in Thread 1](http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/in-thread/1)
