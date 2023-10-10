@@ -28,67 +28,67 @@ In this project, I successfully deployed a monolithic Node.js application to a D
 
 ## Deployment Steps
 
-  ### 1. Initialize AWS Copilot Application
-      
-      cd ./amazon-ecs-nodejs-microservices/
-      copilot app init
-      
-  
-  ### 2. Set Up Environment
-      
-      copilot env init
-      
-  
-  ### 3. Deploy the Environment
-      
-      copilot env deploy --name api
-      
-  
-  ### 4. Set Up Monolithic AWS Copilot Service
-      
-      copilot svc init
-      
-  
-  ### 5. Deploy the Monolithic Service
-      
-      copilot svc deploy --name monolith
-      
-  
-  ### 6. Test the Deployment
-  Use the provided AWS Copilot URL to test endpoints.
+1. ###  Initialize AWS Copilot Application
+    
+    cd ./amazon-ecs-nodejs-microservices/
+    copilot app init
+    
+
+2. ###  Set Up Environment
+    
+    copilot env init
+    
+
+ 3. ### Deploy the Environment
+    
+    copilot env deploy --name api
+    
+
+ 4. ### Set Up Monolithic AWS Copilot Service
+    
+    copilot svc init
+    
+
+ 5. ### Deploy the Monolithic Service
+    
+    copilot svc deploy --name monolith
+    
+
+ 6. ### Test the Deployment
+Use the provided AWS Copilot URL to test endpoints.
 
 ## Creating Microservices
 
-### 1. Initialize the Microservices
+ 1. ### Initialize the Microservices
     
     copilot svc init --app api --dockerfile ./3-microservices/services/posts/Dockerfile --name posts --svc-type "Load Balanced Web Service"
     copilot svc init --app api --dockerfile ./3-microservices/services/threads/Dockerfile --name threads --svc-type "Load Balanced Web Service"
     copilot svc init --app api --dockerfile ./3-microservices/services/users/Dockerfile --name users --svc-type "Load Balanced Web Service"
    
 
-### 2. Configure Service Paths
+ 2. ### Configure Service Paths
 AWS Copilot sets the path based on the service name. Edit the `manifest.yml` for each service to adjust the path.
 
 ## Deploying Microservices
 
-### 1. Deploy the Microservices
+ 1. ### Deploy the Microservices
     
     copilot svc deploy --name posts
     copilot svc deploy --name threads
     copilot svc deploy --name users
     
 
-### 2. Shut down the Monolith
+ 2. ### Shut down the Monolith
     
     copilot svc delete --name monolith
     
 
-### 3. Verify the Deployment
+ 3. ### Verify the Deployment
 Use the provided URLs to validate the microservices deployment.
 
 ## Cleanup and Conclusion
 
-### 1. Delete the Application
+ 1. ### Delete the Application
     
     copilot app delete --name api
     
