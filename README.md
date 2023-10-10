@@ -83,7 +83,7 @@ In this project, I successfully deployed a monolithic Node.js application to a D
    
 
  2. ### Configure Service Paths
-AWS Copilot sets the path based on the service name. Edit the `manifest.yml` for each service to adjust the path.
+-AWS Copilot sets the path based on the service name. Edit the `manifest.yml` for each service to adjust the path.
 
 ## Deploying Microservices
 
