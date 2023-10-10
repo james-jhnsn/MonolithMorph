@@ -116,22 +116,22 @@ copilot svc deploy --name <microservice-name>
 
 copilot svc deploy --name posts
 
-## **Deploy threads microservice:
+## Deploy threads microservice:
 
 
       copilot svc deploy --name threads
 
-## **Deploy users microservice:
+## Deploy users microservice:
 
     copilot svc deploy --name users
 
-## **Step 2: Shut down the Monolith
+## Step 2: Shut down the Monolith
 
 Shut down the monolithic service using:
 
       copilot svc delete --name monolith
 
-### **Step 3: Verify the Deployment
+### Step 3: Verify the Deployment
 
 You can validate the microservices deployment using the provided URLs:
 
