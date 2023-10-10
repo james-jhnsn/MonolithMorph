@@ -15,18 +15,18 @@ Before you begin, ensure you have the following installed:
 1. **AWS Account**: [Sign up here](https://aws.amazon.com/) if you don't have one.
 2. **Docker**: Install for [Mac](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/). 
    - Confirm installation with:
-     ```bash
+     ```
      docker --version
      ```
 
 3. **AWS CLI**: 
     - [Getting Started with AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
     - Confirm installation:
-      ```bash
+      ```
       aws --version
       ```
     - Update if necessary:
-      ```bash
+      ```
       pip install awscli --upgrade --user
       ```
 
@@ -38,24 +38,24 @@ Before you begin, ensure you have the following installed:
 ## Deployment Steps
 
 1. **Initialize AWS Copilot Application**:
-    ```bash
+    ```
     cd ./amazon-ecs-nodejs-microservices/
     copilot app init
     ```
 
 2. **Set Up Environment**:
-    ```bash
+    ```
     copilot env init
     ```
     - When prompted, name the environment `api`.
 
 3. **Deploy the Environment**:
-    ```bash
+    ```
     copilot env deploy --name api
     ```
 
 4. **Set Up Monolithic AWS Copilot Service**:
-    ```bash
+    ```
     copilot svc init
     ```
     - Select `Load Balanced Web Service` when prompted.
@@ -63,7 +63,7 @@ Before you begin, ensure you have the following installed:
     - Select `Enter custom path for your Dockerfile` and specify the path to `2-containerized/services/api/Dockerfile`.
 
 5. **Deploy the Monolithic Service**:
-    ```bash
+    ```
     copilot svc deploy --name monolith
     ```
 
@@ -85,13 +85,9 @@ After setting up the initial `api` Application and the `api` Environment, you ca
 
     Initialize the threads microservice:
 
-    bash
-
 copilot svc init --app api --dockerfile ./3-microservices/services/threads/Dockerfile --name threads --svc-type "Load Balanced Web Service"
 
 Initialize the users microservice:
-
-bash
 
     copilot svc init --app api --dockerfile ./3-microservices/services/users/Dockerfile --name users --svc-type "Load Balanced Web Service"
 
@@ -100,8 +96,6 @@ Step 2: Configure Service Paths
 AWS Copilot configures the service path based on the service name. However, you might want to adjust these paths based on your application's routing. Edit the manifest.yml of each microservice to adjust the path:
 
 For instance, for the posts service:
-
-yaml
 
 http:
   path: 'api/posts'
@@ -124,25 +118,21 @@ copilot svc deploy --name posts
 
 Deploy threads microservice:
 
-bash
 
-copilot svc deploy --name threads
+      copilot svc deploy --name threads
 
 Deploy users microservice:
 
-bash
-
     copilot svc deploy --name users
 
-Step 2: Shut down the Monolith
+**Step 2: Shut down the Monolith
 
 Shut down the monolithic service using:
 
-bash
 
 copilot svc delete --name monolith
 
-Step 3: Verify the Deployment
+**Step 3: Verify the Deployment
 
 You can validate the microservices deployment using the provided URLs:
 
