@@ -21,15 +21,28 @@ In this project, I successfully deployed a monolithic Node.js application to a D
       
       aws --version
       
-4. **AWS Copilot**: install:
-  
-  **macOS**: 	curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-darwin && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot —help
-     
-  **Linux x86 (64-bit)**: 	curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot —help
-     
-  **Linux (ARM)**: 	curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux-arm64 && chmod +x copilot && sudo mv copilot
-     
-  **Windows**: 	Invoke-WebRequest -OutFile 'C:\Program Files\copilot.exe' https://github.com/aws/copilot-cli/releases/latest/download/copilot-windows.exe
+### 4. AWS Copilot Installation:
+
+#### **macOS**: 
+\```bash
+curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-darwin && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot —help
+\```
+
+#### **Linux x86 (64-bit)**: 
+\```bash
+curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux && chmod +x copilot && sudo mv copilot /usr/local/bin/copilot && copilot —help
+\```
+
+#### **Linux (ARM)**: 
+\```bash
+curl -Lo copilot https://github.com/aws/copilot-cli/releases/latest/download/copilot-linux-arm64 && chmod +x copilot && sudo mv copilot
+\```
+
+#### **Windows**: 
+\```powershell
+Invoke-WebRequest -OutFile 'C:\Program Files\copilot.exe' https://github.com/aws/copilot-cli/releases/latest/download/copilot-windows.exe
+\```
+
    
 ## Deployment Steps
 
