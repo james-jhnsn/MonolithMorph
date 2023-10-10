@@ -28,34 +28,34 @@ In this project, I successfully deployed a monolithic Node.js application to a D
 
 ## Deployment Steps
 
-1. ###  Initialize AWS Copilot Application
-    
-    cd ./amazon-ecs-nodejs-microservices/
-    copilot app init
-    
-
-2. ###  Set Up Environment
-    
-    copilot env init
-    
-
- 3. ### Deploy the Environment
-    
-    copilot env deploy --name api
-    
-
- 4. ### Set Up Monolithic AWS Copilot Service
-    
-    copilot svc init
-    
-
- 5. ### Deploy the Monolithic Service
-    
-    copilot svc deploy --name monolith
-    
-
- 6. ### Test the Deployment
-Use the provided AWS Copilot URL to test endpoints.
+ 1. ###  Initialize AWS Copilot Application
+     
+        cd ./amazon-ecs-nodejs-microservices/
+        copilot app init
+     
+ 
+ 2. ###  Set Up Environment
+     
+        copilot env init
+     
+ 
+  3. ### Deploy the Environment
+     
+         copilot env deploy --name api
+     
+ 
+  4. ### Set Up Monolithic AWS Copilot Service
+     
+         copilot svc init
+     
+ 
+  5. ### Deploy the Monolithic Service
+     
+         copilot svc deploy --name monolith
+     
+ 
+  6. ### Test the Deployment
+ Use the provided AWS Copilot URL to test endpoints.
 
 ## Creating Microservices
 
