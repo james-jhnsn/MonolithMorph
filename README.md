@@ -55,7 +55,7 @@ In this project, I successfully deployed a monolithic Node.js application to a D
      
  
   6. ### Test the Deployment
- Use the provided AWS Copilot URL to test endpoints.
+   Use the provided AWS Copilot URL to test endpoints.
 
 ## Creating Microservices
 
