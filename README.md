@@ -97,7 +97,6 @@ AWS Copilot configures the service path based on the service name. However, you 
 
 For instance, for the posts service:
 
-      http:
         path: 'api/posts'
 
 Repeat similar configurations for threads and users services by setting their respective paths in the manifest files.
