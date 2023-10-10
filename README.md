@@ -77,7 +77,7 @@ Before you begin, ensure you have the following installed:
 
 After setting up the initial `api` Application and the `api` Environment, you can utilize them to deploy your microservices. This section covers the deployment of three microservices: `posts`, `threads`, and `users`.
 
-### Step 1: Initialize the Microservices
+### 1: Initialize the Microservices
 
 1. **Initialize the `posts` microservice**:
    ```
@@ -91,7 +91,7 @@ Initialize the users microservice:
 
     copilot svc init --app api --dockerfile ./3-microservices/services/users/Dockerfile --name users --svc-type "Load Balanced Web Service"
 
-Step 2: Configure Service Paths
+2: Configure Service Paths
 
 AWS Copilot configures the service path based on the service name. However, you might want to adjust these paths based on your application's routing. Edit the manifest.yml of each microservice to adjust the path:
 
@@ -104,7 +104,7 @@ Repeat similar configurations for threads and users services by setting their re
 
 ## Deploying Microservices
 
-### **Step 1: Deploy the Microservices**
+### **1: Deploy the Microservices**
 
 For each microservice, run the following command:
 
@@ -122,13 +122,13 @@ For each microservice, run the following command:
 
     copilot svc deploy --name users
 
-### **Step 2: Shut down the Monolith**
+### **2: Shut down the Monolith**
 
 Shut down the monolithic service using:
 
       copilot svc delete --name monolith
 
-### **Step 3: Verify the Deployment**
+### **3: Verify the Deployment**
 
 You can validate the microservices deployment using the provided URLs:
 
@@ -151,7 +151,7 @@ View Posts in Thread 1:
 ## Cleanup and Conclusion
 
 Before you begin the cleanup, ensure that you've successfully deployed all services and have no pending tasks related to them.
-Step 1: Delete the Application
+1: Delete the Application
 
 Delete all services and associated infrastructure with the following command:
 
