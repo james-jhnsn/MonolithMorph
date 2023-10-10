@@ -73,3 +73,39 @@ Before you begin, ensure you have the following installed:
     http://<application-string>.us-east-1.elb.amazonaws.com/api/users/3
     http://<application-string>.us-east-1.elb.amazonaws.com/api/threads/2
     ```
+## Creating Microservices
+
+After setting up the initial `api` Application and the `api` Environment, you can utilize them to deploy your microservices. This section covers the deployment of three microservices: `posts`, `threads`, and `users`.
+
+### Step 1: Initialize the Microservices
+
+1. **Initialize the `posts` microservice**:
+   ```bash
+   copilot svc init --app api --dockerfile ./3-microservices/services/posts/Dockerfile --name posts --svc-type "Load Balanced Web Service"
+
+    Initialize the threads microservice:
+
+    bash
+
+copilot svc init --app api --dockerfile ./3-microservices/services/threads/Dockerfile --name threads --svc-type "Load Balanced Web Service"
+
+Initialize the users microservice:
+
+bash
+
+    copilot svc init --app api --dockerfile ./3-microservices/services/users/Dockerfile --name users --svc-type "Load Balanced Web Service"
+
+Step 2: Configure Service Paths
+
+AWS Copilot configures the service path based on the service name. However, you might want to adjust these paths based on your application's routing. Edit the manifest.yml of each microservice to adjust the path:
+
+For instance, for the posts service:
+
+yaml
+
+http:
+  path: 'api/posts'
+
+Repeat similar configurations for threads and users services by setting their respective paths in the manifest files.
+
+
