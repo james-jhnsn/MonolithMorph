@@ -108,24 +108,21 @@ Repeat similar configurations for threads and users services by setting their re
 
 For each microservice, run the following command:
 
+      copilot svc deploy --name <microservice-name>
 
-copilot svc deploy --name <microservice-name>
+Deploy posts microservice:
 
-    Deploy posts microservice:
+      copilot svc deploy --name posts
 
-
-copilot svc deploy --name posts
-
-## Deploy threads microservice:
-
+### **Deploy threads microservice**:
 
       copilot svc deploy --name threads
 
-## Deploy users microservice:
+### Deploy users microservice:
 
     copilot svc deploy --name users
 
-## Step 2: Shut down the Monolith
+### Step 2: Shut down the Monolith
 
 Shut down the monolithic service using:
 
