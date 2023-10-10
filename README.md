@@ -97,7 +97,7 @@ AWS Copilot configures the service path based on the service name. However, you 
 
 For instance, for the posts service:
 
-        path: 'api/posts'
+      'api/posts'
 
 Repeat similar configurations for threads and users services by setting their respective paths in the manifest files.
 
@@ -119,7 +119,7 @@ For each microservice, run the following command:
 
 **Deploy users microservice:**
 
-    copilot svc deploy --name users
+      copilot svc deploy --name users
 
 ### **2: Shut down the Monolith**
 
