@@ -108,4 +108,49 @@ http:
 
 Repeat similar configurations for threads and users services by setting their respective paths in the manifest files.
 
+## Deploying Microservices
 
+### **Step 1: Deploy the Microservices**
+
+For each microservice, run the following command:
+
+```
+copilot svc deploy --name <microservice-name>
+
+Deploy posts microservice:
+
+
+
+copilot svc deploy --name posts
+
+Deploy threads microservice:
+
+
+
+copilot svc deploy --name threads
+
+Deploy users microservice:
+
+
+
+copilot svc deploy --name users
+
+Step 2: Shut down the Monolith
+
+To shut down the monolithic service, execute:
+
+
+
+copilot svc delete --name monolith
+
+Step 3: Verify the Deployment
+
+Test the microservices by visiting the following URLs:
+
+    User Data
+
+    Thread Data
+
+    Posts Data
+
+    Posts in Thread 1
