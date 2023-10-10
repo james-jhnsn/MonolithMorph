@@ -80,7 +80,7 @@ After setting up the initial `api` Application and the `api` Environment, you ca
 ### Step 1: Initialize the Microservices
 
 1. **Initialize the `posts` microservice**:
-   ```bash
+   ```
    copilot svc init --app api --dockerfile ./3-microservices/services/posts/Dockerfile --name posts --svc-type "Load Balanced Web Service"
 
     Initialize the threads microservice:
@@ -147,3 +147,22 @@ View Posts Data:
 View Posts in Thread 1:
 
       http://api-a-publi-du44d9vosxla-792918025.us-east-1.elb.amazonaws.com/api/posts/in-thread/1
+
+## Cleanup and Conclusion
+
+Before you begin the cleanup, ensure that you've successfully deployed all services and have no pending tasks related to them.
+Step 1: Delete the Application
+
+Delete all services and associated infrastructure with the following command:
+
+      copilot app delete --name api
+
+Conclusion
+
+Congratulations! You've successfully completed the "Break a Monolithic Application into Microservices" tutorial. Through this journey, you've learned how to:
+
+    Run a simple monolithic application in a Docker container.
+    Deploy the same application as distinct microservices.
+    Transition traffic to the microservices without any service interruption.
+
+Now, you're equipped with the skills to break larger applications into manageable microservices, streamlining development and deployment.
