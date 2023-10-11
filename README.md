@@ -8,20 +8,26 @@ In this project, I successfully deployed a monolithic Node.js application to a D
 
 ## Prerequisites
 
-1. **AWS Account**: [Sign up here](https://aws.amazon.com/) if you don't have one.
-2. **Docker**: Install for [Mac](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/). 
+
+1. **Clone the Repository**
+  
+       git clone <your-repo-link>
+       cd <your-repo-directory>
+
+2. **AWS Account**: [Sign up here](https://aws.amazon.com/) if you don't have one.
+3. **Docker**: Install for [Mac](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/). 
  - Confirm installation with:
      
        docker --version
      
 
-3. **AWS CLI**: 
+4. **AWS CLI**: 
 - [Getting Started with AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 - Confirm installation:
       
       aws --version
       
-### 4. AWS Copilot Installation:
+### 5. AWS Copilot Installation:
 
 - **macOS**: 
 
