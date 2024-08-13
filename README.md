@@ -4,7 +4,7 @@ MonolithMorph
 
 ## Description
 
-In this project, I successfully deployed a monolithic Node.js application to a Docker container and then decoupled it into microservices without any downtime. The application I built is a message board that allows users to interact through threads and messages.
+In this project, I successfully deployed a monolithic Node.js application to a Docker container and then decoupled it into microservices without any downtime. The application is a message board that allows users to interact through threads and messages.
 
 ## Prerequisites
 
