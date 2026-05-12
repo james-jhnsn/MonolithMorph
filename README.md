@@ -11,8 +11,10 @@ In this project, I successfully deployed a monolithic Node.js application to a D
 
 1. **Clone the Repository**
   
-       git clone <your-repo-link>
-       cd <your-repo-directory>
+```bash
+git clone https://github.com/yourname/MonolithMorph.git
+cd MonolithMorph
+```
 
 2. **AWS Account**: [Sign up here](https://aws.amazon.com/) if you don't have one.
 3. **Docker**: Install for [Mac](https://docs.docker.com/docker-for-mac/install/) or [Windows](https://docs.docker.com/docker-for-windows/install/). 
